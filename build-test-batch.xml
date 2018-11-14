@@ -5918,24 +5918,6 @@ ${output.content}</echo>
 					</test-action>
 				</database-test-run-test>
 			</test-action>
-
-			<test-set-up>
-				<if>
-					<isset property="env.DIST_PATH" />
-					<then>
-						<prepare-test-environment />
-					</then>
-					<else>
-						<prepare-test-build />
-					</else>
-				</if>
-
-				<antcall target="prepare-portal-ext-properties">
-					<param name="hot.deploy.dependency.management.enabled" value="false" />
-				</antcall>
-
-				<antcall target="prepare-system-ext-properties" />
-			</test-set-up>
 		</run-batch-test>
 	</target>
 
