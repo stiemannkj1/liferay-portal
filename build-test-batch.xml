@@ -3929,10 +3929,11 @@ log.sanitizer.enabled=false</echo>
 							<fileset
 								dir="${liferay.faces.bridge.impl.dir}"
 								includes="**/target/*.war"
+								excludes="**/target/*cdi*.war,**/target/*flow*.war"
 							/>
 							<fileset
 								dir="${liferay.faces.portal.dir}"
-								excludes="**/target/com.liferay.faces.test.setup.hook*.war,**/target/*cdi*.war,**/target/*flow*.war"
+								excludes="**/target/com.liferay.faces.test.setup.hook*.war"
 								includes="**/target/*.war"
 							/>
 						</copy>
