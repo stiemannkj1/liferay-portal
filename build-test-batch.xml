@@ -3932,7 +3932,7 @@ log.sanitizer.enabled=false</echo>
 							/>
 							<fileset
 								dir="${liferay.faces.portal.dir}"
-								excludes="**/target/com.liferay.faces.test.setup.hook*.war"
+								excludes="**/target/com.liferay.faces.test.setup.hook*.war,**/target/*cdi*.war,**/target/*flow*.war"
 								includes="**/target/*.war"
 							/>
 						</copy>
