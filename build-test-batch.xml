@@ -4214,6 +4214,7 @@ log.sanitizer.enabled=false</echo>
 							<fileset
 								dir="${liferay.faces.bridge.impl.dir}"
 								includes="**/target/*.war"
+								excludes="**/target/*cdi*.war,**/target/*flow*.war"
 							/>
 							<fileset
 								dir="${liferay.faces.portal.dir}"
