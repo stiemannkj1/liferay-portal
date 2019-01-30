@@ -4243,7 +4243,7 @@ log.sanitizer.enabled=false</echo>
 						</execute>
 
 						<execute dir="${liferay.faces.bridge.impl.dir}/tck/bridge-tck-main-portlet" failonerror="false">
-							mvn verify -P selenium,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=300
+							mvn verify -P selenium,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=${liferay.faces.test.timeout}
 						</execute>
 
 						<!--
@@ -4319,7 +4319,7 @@ log.sanitizer.enabled=false</echo>
 						</execute>
 
 						<execute dir="${liferay.faces.bridge.impl.dir}/test/integration" failonerror="false">
-							mvn verify -P selenium,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=300
+							mvn verify -P selenium,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=${liferay.faces.test.timeout}
 						</execute>
 
 						<!--
@@ -4333,7 +4333,7 @@ log.sanitizer.enabled=false</echo>
 						/>
 
 						<execute dir="${liferay.faces.bridge.impl.dir}/test/integration" failonerror="false">
-							mvn verify -P selenium-alloy-showcase,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=300
+							mvn verify -P selenium-alloy-showcase,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=${liferay.faces.test.timeout}
 						</execute>
 
 						<!--
@@ -4347,7 +4347,7 @@ log.sanitizer.enabled=false</echo>
 						/>
 
 						<execute dir="${liferay.faces.bridge.impl.dir}/test/integration" failonerror="false">
-							mvn verify -P selenium-jsf-showcase,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=300
+							mvn verify -P selenium-jsf-showcase,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=${liferay.faces.test.timeout}
 						</execute>
 
 						<execute dir="${liferay.faces.portal.dir}/test/integration">
@@ -4355,7 +4355,7 @@ log.sanitizer.enabled=false</echo>
 						</execute>
 
 						<execute dir="${liferay.faces.portal.dir}/test/integration" failonerror="false">
-							mvn verify -P selenium,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=300
+							mvn verify -P selenium,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=${liferay.faces.test.timeout}
 						</execute>
 
 						<!--
@@ -4369,7 +4369,7 @@ log.sanitizer.enabled=false</echo>
 						/>
 
 						<execute dir="${liferay.faces.portal.dir}/test/integration" failonerror="false">
-							mvn verify -P selenium-portal-showcase,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=300
+							mvn verify -P selenium-portal-showcase,firefox -Dwebdriver.firefox.bin=${browser.firefox.bin.file} -Dintegration.browser.driver.wait.time.out=${liferay.faces.test.timeout}
 						</execute>
 					</test-action>
 				</database-test-run-test>
